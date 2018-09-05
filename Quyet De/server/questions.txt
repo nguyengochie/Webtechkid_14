@@ -1,1 +1,1 @@
-[{"id":1,"questionContent":"cau 1?","yes":4,"no":0},{"id":2,"questionContent":"cau 2?","yes":7,"no":9},{"id":3,"questionContent":"cau 3?","yes":0,"no":3}]
+[]

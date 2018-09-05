@@ -8,6 +8,7 @@
     <title>Quyet de </title>
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 
@@ -17,14 +18,33 @@
         <a href="/">Đáp gọn</a>
 
     </nav>
-    <div>
+    <div class="question">
         <h1 id="questionContent">Question content</h1>
-        <button data-id="" data-answer="no" id="no" class="answer">Sai / không / trái</button>
-        <button data-id="" data-answer="yes" id="yes" class="answer">Đúng / có / phải</button>
-    </div>
-    <div>
-        <button>Xem ket qua</button>
-        <button>Cau hoi khac</button>
+        <div class="answers">
+            <div>
+                <button data-id="" data-answer="no" class="answer">Sai / Không / Trái</button>
+                <button data-id="" data-answer="yes" class="answer">Đúng / Có / Phải</button>
+            </div>
+            <div>
+                <button id="viewQuestionInfo">Xem kết quả</button>
+                <a href="/"><button>Câu hỏi khác</button></a>
+            </div>
+        </div>
+       
+        <div class="questionInfo">
+            <div>
+                <span id="vote"></span> vote
+            </div>
+            <div>
+                Vote yes: <span id="voteYes"></span>%
+            </div>
+            <div>
+                Vote no: <span id="voteNo"></span>%
+            </div>
+            <div>
+                <a href="/"><button>Câu hỏi khác</button></a>
+            </div>
+        </div>
     </div>
 </body>
 
