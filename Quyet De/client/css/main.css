@@ -1,3 +1,37 @@
 .questionInfo{
     display: none;
 }
+#btn_chuyen{
+    margin-top: 60px;
+}
+.percent{
+    border-radius: 10px;
+    overflow: hidden;
+}
+#result_yes{
+    padding: 7px 0;
+    text-align: center;
+    float: left;
+    color: white;
+    background: #337ab7;
+}
+#result_no{
+    padding: 7px 0;
+    text-align: center;
+    float: left;
+    color: white;
+    background: #d9534f;
+    
+}
+div{
+    display: block;
+}
+.btn_xemcaukhac{
+    margin-top: 40px;
+    margin-left: 40%;
+    
+}
+#vote{
+    margin-top: 10px;
+}
+
