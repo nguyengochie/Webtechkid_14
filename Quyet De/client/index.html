@@ -6,43 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quyet de </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 
 <body>
-    <nav>
-        <a href="/ask.html">Hỏi nhanh</a>
-        <a href="/">Đáp gọn</a>
+
+    <!-- <a href="/ask.html">Hỏi nhanh</a>
+        <a href="/">Đáp gọn</a> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Quyết đê</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/ask.html">Hỏi nhanh <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Đáp gọn</a>
+                </li>
+            </ul>
+        </div>
+
 
     </nav>
-    <div class="question">
-        <h1 id="questionContent">Question content</h1>
-        <div class="answers">
-            <div>
-                <button data-id="" data-answer="no" class="answer">Sai / Không / Trái</button>
-                <button data-id="" data-answer="yes" class="answer">Đúng / Có / Phải</button>
+    <div class="container">
+        <div class="question">
+            <div class="row text-center">
+                <div class="col-md-6 offset-md-3">
+                    <h1 class="mt-5" id="questionContent">Question content</h1>
+
+                </div>
             </div>
-            <div>
-                <button id="viewQuestionInfo">Xem kết quả</button>
-                <a href="/"><button>Câu hỏi khác</button></a>
+            <div class="answers">
+                <div class="row text-center">
+
+                    <div class="col-md-6"><button data-id="" data-answer="no" class="answer btn btn-danger btn-lg">Sai
+                            / Không / Trái</button></div>
+                    <div class="col-md-6"><button data-id="" data-answer="yes" class="answer btn btn-primary btn-lg">Đúng
+                            / Có / Phải</button></div>
+
+                </div>
+                <div class="row text-center" id="btn_chuyen">
+                    <div class="col-md-6 offset-md-3">
+                        <button class="btn btn-default" id="viewQuestionInfo">Xem kết quả</button>
+                        <a href="/"><button class="btn btn-default">Câu hỏi khác</button></a>
+                    </div>
+                </div>
             </div>
         </div>
-       
+
         <div class="questionInfo">
-            <div>
-                <span id="vote"></span> vote
+
+            <div class="row text-center">
+                <h5 class="col-md-6 offset-md-3" id="vote"></h5>
+            </div>
+            <div class="percent">
+                <div id="result_no">
+                    Vote no: <span id="voteNo"></span>%
+                </div>
+                <div id="result_yes">
+                    Vote yes: <span id="voteYes"></span>%
+                </div>
             </div>
             <div>
-                Vote yes: <span id="voteYes"></span>%
-            </div>
-            <div>
-                Vote no: <span id="voteNo"></span>%
-            </div>
-            <div>
-                <a href="/"><button>Câu hỏi khác</button></a>
+                <a href="/"><button class="btn btn-success btn-lg btn_xemcaukhac">Câu hỏi khác</button></a>
             </div>
         </div>
     </div>
